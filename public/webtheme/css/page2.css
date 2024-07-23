@@ -1,0 +1,254 @@
+/* Additional CSS for Page 2 */
+
+/* ================ */
+/* Reuseable Components */
+/* ================ */
+.heading {
+  color: #242f40;
+}
+.para-size {
+  color: #0e212d;
+}
+.para-color-5b6b82 {
+  color: #a5aeb9;
+}
+.para-color-122136 {
+  color: #122136;
+}
+.para-color-485668 {
+  color: #485668;
+}
+/* ================ */
+/* Header Section */
+/* ================ */
+#header-section {
+  background-image: url("../img/page-2-img/banner-bg.png");
+}
+/* ================ */
+/* Do Not Call Section */
+/* ================ */
+#do-not-call-section {
+  padding: 8rem 0;
+}
+#do-not-call-section .heading span {
+  color: #006fff;
+  border-bottom: 2px solid #006fff;
+}
+/* ================ */
+/* Purchase Section */
+/* ================ */
+#purchase-section {
+  background-image: url("../img/page-2-img/purchase-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10rem 0;
+}
+.purchase-form {
+  border-radius: 2.8rem;
+  padding: 0.5rem;
+  background-color: white;
+}
+.purchase-input {
+  width: 30rem;
+  background-color: transparent;
+}
+.purchase-btn {
+  border-radius: 2.8rem;
+  padding: 0.5rem 2rem;
+}
+@media screen and (max-width: 575px) {
+  #purchase-section .heading {
+    font-size: 3rem;
+  }
+  .purchase-form {
+    background-color: transparent;
+  }
+  .purchase-input {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 2.8rem;
+    margin-bottom: 2rem;
+  }
+}
+/* ================ */
+/* Info Section */
+/* ================ */
+.info-box {
+  background: #f2f4f6 0% 0% no-repeat padding-box;
+  border-radius: 36px;
+  padding: 4rem;
+}
+.info-heading {
+  font-size: 3rem;
+  font-family: poligon-bold;
+  color: #242f40;
+}
+p.para-size b {
+  font-family: poligon-bold;
+  color: #006fff;
+  border-bottom: 2px solid #006fff;
+}
+p.para-size span {
+  color: #ff7474;
+  border-bottom: 1px solid #ff7474;
+}
+p.para-size span.color-006fff {
+  color: #006fff;
+  border-color: #006fff;
+}
+p.para-size b:hover,
+p.para-size span:hover {
+  border: none !important;
+}
+.info-box .imp {
+  background: transparent linear-gradient(97deg, #006fff 0%, #ff00dd 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 17px;
+}
+/* ================ */
+/* How It Works  Section */
+/* ================ */
+#how-it-works-section {
+  padding-top: 8rem;
+}
+.how-it-works-card-box {
+  box-shadow: 0px 6px 28px #00000017;
+  border-radius: 28px;
+  padding: 4rem;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.how-it-works-card-box:hover {
+  transition: all 0.5s linear;
+  cursor: pointer;
+  box-shadow: 0 10px 10px #00000031;
+  background-color: #d9fbff;
+}
+.how-it-works-card-box h3 {
+  font-family: poligon-bold;
+  color: #006fff;
+  font-size: 2.3rem;
+}
+/* ================ */
+/* Product Section */
+/* ================ */
+#products-section {
+  padding: 10rem 0;
+  padding-bottom: 25rem;
+}
+.pricing-box {
+  box-shadow: 0px 2px 18px #0000001a;
+  padding: 5rem 3rem;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+}
+.pricing-box:hover {
+  border: 1px solid #006fff;
+  cursor: pointer;
+  box-shadow: none;
+}
+.pricing-box-xl {
+  transform: scale(1.1);
+  border: 1px solid #006fff;
+}
+.pricing-box .media {
+  margin-top: 1rem;
+}
+.price-heading {
+  font-size: 2rem;
+  font-family: poligon-bold;
+  color: #242f40;
+}
+.price {
+  font-size: 6rem;
+  font-family: poligon-bold;
+  color: #242f40;
+}
+.price .dollar {
+  font-family: poligon-regular;
+  font-size: 2.5rem;
+}
+.price .month {
+  font-family: poligon-regular;
+  font-size: 1.8rem;
+  color: #5b6b82;
+}
+.fa-check {
+  color: #3ccf8e;
+  border: 1px solid #3ccf8e;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+.choose-btn {
+  border: 1px solid #5b6b82;
+  background: transparent;
+  color: #5b6b82;
+}
+.choose-btn::after {
+  height: 0;
+}
+.choose-btn:hover {
+  border: 1px solid transparent;
+}
+@media screen and (max-width: 575px) {
+  .pricing-box {
+    margin: 3rem 0 !important;
+  }
+}
+/* ================ */
+/* Contact Section */
+/* ================ */
+#contact-section {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  width: 100% !important;
+}
+.contact-main-box {
+  background-color: #006fff;
+  background-image: url("../img/page-2-img/contact-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  animation: move 5s infinite;
+  -webkit-animation: move 5s infinite;
+}
+.footer-widget {
+  padding-top: 200px !important;
+}
+@keyframes move {
+  0% {
+    background-position: right;
+  }
+
+  50% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contact-main-box {
+    background-position: bottom right;
+  }
+  .footer-widget {
+    padding-top: 250px !important;
+  }
+  .contact-main-box .heading {
+    font-size: 4rem !important;
+  }
+}
+/* ================ */
+/* Footer Section */
+/* ================ */
+footer {
+  background-color: #0c1b2e;
+}

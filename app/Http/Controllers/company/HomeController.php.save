@@ -1,0 +1,36 @@
+<?php
+
+namespace App\Http\Controllers\company;
+
+use App\Http\Controllers\Controller;
+use App\Models\EmployeeDetail;
+use App\Models\Sms;
+use Illuminate\Http\Request;
+use Auth;
+use DB;
+class HomeController extends Controller
+{
+    public function index(){
+        $employee=EmployeeDetail::where('user_id', Auth::user()->id)->count();
+        return view('company.home',compact('employee'));
+    }
+
+	public function smscommpanycheck(){
+	$company_id=Auth::user()->company_id;
+	$sms=Sms::join('users','users.id','sms.user_id')->where('sms.company_id',$company_id)->select([
+    DB::raw('sms.email as email'),
+    DB::raw('sms.created_at as created_at'),
+    DB::raw('sms.updated_at as updated_at'),
+     'users.name',
+     'sms.firstname',
+     'sms.lastname',
+     'sms.message',
+     'sms.wphone',
+     'sms.hphone',
+     'sms.address',
+     'sms.zipcode',
+     'sms.city',
+     ])->get();
+
+	}
+}
